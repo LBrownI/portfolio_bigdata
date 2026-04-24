@@ -16,3 +16,17 @@ print("Data type:", data.dtype)
 #Data type: int64
 
 # Se puede comprobar que el arreglo original es de 1 dimensión y el tipo de dato es entero (int64).
+
+
+data_reshaped = data.reshape(4,3)
+print("Reshaped data:", data_reshaped)
+print("Shape:", data_reshaped.shape)
+
+
+# Reshaped data: 
+# [[ 10  20  30]
+#  [ 40  50  60]
+#  [ 70  80  90]
+#  [100 110 120]]
+# Shape: (4, 3)
+
