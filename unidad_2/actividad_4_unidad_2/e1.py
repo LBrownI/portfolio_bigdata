@@ -18,6 +18,8 @@ print("Data type:", data.dtype)
 # Se puede comprobar que el arreglo original es de 1 dimensión y el tipo de dato es entero (int64).
 
 
+# 2. Convierte los datos en una matriz de 4 filas.
+
 data_reshaped = data.reshape(4,3)
 print("Reshaped data:", data_reshaped)
 print("Shape:", data_reshaped.shape)
@@ -30,3 +32,5 @@ print("Shape:", data_reshaped.shape)
 #  [100 110 120]]
 # Shape: (4, 3)
 
+# 3. Interpreta: ¿Qué podría representar cada fila?
+# Cada fila podría representar un grupo de 3 valores consecutivos del arreglo original.
