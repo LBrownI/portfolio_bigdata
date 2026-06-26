@@ -1,0 +1,119 @@
+=== PARTE 1: NUMPY ===
+
+--- Ejercicio 1 ---
+Shape original: (20,)
+Dtype: int64
+Matriz 4x5:
+ [[ 1  2  3  4  5]
+ [ 6  7  8  9 10]
+ [11 12 13 14 15]
+ [16 17 18 19 20]]
+Segunda fila: [ 6  7  8  9 10]
+Tercera columna: [ 3  8 13 18]
+
+--- Ejercicio 2 ---
+Multiplicado por 3: [15 30 45 60 75 90]
+Reemplazar > 20 por -1: [15 -1 -1 -1 -1 -1]
+Valores positivos resultantes: [15]
+
+--- Ejercicio 3 ---
+Suma entre matrices:
+ [[10 10 10]
+ [10 10 10]
+ [10 10 10]]
+Multiplicación elemento a elemento:
+ [[ 9 16 21]
+ [24 25 24]
+ [21 16  9]]
+Suma total matA: 45
+Suma total matB: 45
+
+--- Ejercicio 4 ---
+Arreglo original: [15 20 21 41 13  5  8  9 27 30]
+Promedio: 18.9
+Máximo: 41
+Mínimo: 5
+Ordenado de menor a mayor: [ 5  8  9 13 15 20 21 27 30 41]
+Cantidad mayores al promedio: 5
+
+--- Ejercicio 5 ---
+Matriz 5x4:
+ [[76 54 75  9]
+ [29 51 80 27]
+ [93 89 91 41]
+ [ 6 20 84 76]
+ [ 9 47 53  9]]
+Promedio por fila: [53.5  46.75 78.5  46.5  29.5 ]
+Fila con mayor promedio (índice): 2
+Fila con mayor promedio: [93 89 91 41]
+
+=== PARTE 2: PANDAS ===
+
+--- Ejercicio 6 ---
+Primeras filas:
+    Nombre  Edad Carrera
+0    Juan    20     Ing
+1     Ana    22     Med
+2   Pedro    21     Der
+3   Laura    23     Ing
+4  Carlos    20     Arq
+Tipos de datos:
+ Nombre       str
+Edad       int64
+Carrera      str
+dtype: object
+Resumen estadístico:
+            Edad
+count   5.00000
+mean   21.20000
+std     1.30384
+min    20.00000
+25%    20.00000
+50%    21.00000
+75%    22.00000
+max    23.00000
+
+--- Ejercicio 7 ---
+DataFrame con Promedio y Estado:
+    Nombre  Edad Carrera  Promedio     Estado
+0    Juan    20     Ing       5.5   Aprobado
+1     Ana    22     Med       3.8  Reprobado
+2   Pedro    21     Der       4.2   Aprobado
+3   Laura    23     Ing       6.0   Aprobado
+4  Carlos    20     Arq       3.5  Reprobado
+Solo aprobados:
+   Nombre  Edad Carrera  Promedio    Estado
+0   Juan    20     Ing       5.5  Aprobado
+2  Pedro    21     Der       4.2  Aprobado
+3  Laura    23     Ing       6.0  Aprobado
+
+--- Ejercicio 8 ---
+Resumen por carrera:
+          Promedio_notas  Cantidad_estudiantes
+Carrera
+Ing            4.433333                     3
+Med            5.750000                     2
+
+--- Ejercicio 9 ---
+Promedio general: 5.042857142857143
+Estudiantes sobre el promedio general:
+   Carrera  Promedio
+2     Med       6.0
+3     Med       5.5
+6     Arq       6.5
+
+--- Ejercicio 10 ---
+Merge realizado:
+    ID   Nombre Carrera      _merge
+0   1    Alice     NaN   left_only
+1   2      Bob     NaN   left_only
+2   3  Charlie     Ing        both
+3   4    David     Med        both
+4   5      NaN     Arq  right_only
+5   6      NaN     Der  right_only
+IDs sin coincidencia:
+    ID Nombre Carrera      _merge
+0   1  Alice     NaN   left_only
+1   2    Bob     NaN   left_only
+4   5    NaN     Arq  right_only
+5   6    NaN     Der  right_only
